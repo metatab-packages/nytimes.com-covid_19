@@ -1,0 +1,44 @@
+Declare,metatab-latest
+Title,COVID-19 From The New York Times
+Description,"Data from the New York Times, primarily excess deaths"
+Identifier,707dd2b9-7052-4af1-8f2e-ab2d42079ec5
+Name,nytimes.com-covid_19-1.1.1
+Dataset,covid-19
+Origin,nytimes.com
+Time,
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2020-06-28T19:57:24
+Modified,2020-06-28T20:02:58
+Giturl,https://github.com/metatab-packages/covid19-collection.git
+""
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+""
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+""
+Section,References,Name,Description,
+""
+Section,Resources,Name,Description,
+Datafile,https://raw.githubusercontent.com/nytimes/covid-19-data/master/excess-deaths/deaths.csv,excess_deaths,Excess deaths,
+""
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,excess_deaths,,,,
+Table.Column,country,string,,,
+Table.Column,placename,string,,,
+Table.Column,frequency,string,,,
+Table.Column,start_date,date,,,
+Table.Column,end_date,date,,,
+Table.Column,year,integer,,,T
+Table.Column,month,integer,,,
+Table.Column,week,integer,,,
+Table.Column,deaths,integer,,,
+Table.Column,expected_deaths,integer,,,
+Table.Column,excess_deaths,integer,,,
+Table.Column,baseline,string,,,
